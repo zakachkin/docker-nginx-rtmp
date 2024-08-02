@@ -2,7 +2,8 @@ version: '3'
 
 services:
   nginx-rtmp:
-    build: .
+    build:
+      dockerfile: Dockerfile
     ports:
       - 1935:1935
       - 8080:80
